@@ -101,5 +101,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-script (~> 2.2.0)
   middleman (~> 3.0.6)
   redcarpet
