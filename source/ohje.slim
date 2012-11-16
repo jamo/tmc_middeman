@@ -1,0 +1,47 @@
+h1 TMC plugin ja ääkköongelmat
+
+p Osalla kurssilaisilla on ollut ääkkösongelmia TMC-tehtävien virheilmoituksissa. Tällöin ääkköset näkyvät virheilmoituksissa epämääräisinä merkkeinä. 
+
+p Mikäli sinulla ei ole ollut tätä ongelmaa, voit lopettaa viestin lukemisen tähän.  
+ 
+p Te, joilla tämä ongelma on, tunnistatte sen varmasti ylläolevasta kuvauksesta.  
+
+p TMC pluginissa ollut bugi on korjattu, mutta korjatun TMC pluginin massajakelu ei ole mahdollista NetBeanssin 7.2.1 -versiossa olevan bugin* takia.  
+
+p Tämä korjaus on kuitenkin saatavilla, ja asentuu mitä todennäköisemmin ongelmitta. 
+
+p Tässä vielä ohje muualla hostatun pluginin asennukseen: https://www.youtube.com/watch?v=yxFeZihtRgM
+
+p Ohjeet tarvittaessa myös tekstinä:
+ul
+    li Avaa NetBeans, jollei se ole jo auki.  
+    li Valikosta Tools | Plugins   
+    ul
+        li  Välilehti Installed  
+        ul
+            li Rastita "User Installed Plugins / Test My Code Plugin"  ja valitse Uninstall  
+            li Vanha TMC plugin asennus poistuu.  
+    li Uudelleenkäynnistä NB päivityksen jälkeen.  
+    li Valikosta Tools | Plugins  
+    ul
+        li Välilehti Settings  
+        ul
+            li Vasemmasta sarakkeesta TMC, tai se nimi, jonka sille vanhan TMC pluginin asennuksen  yhteydessä annoit.  
+            li Valitse se ja oikeasta yläreunasta Edit  
+            li Vaihda sen URLin tilalle http://jamo.fi/updates/updates.xml  
+    
+        li Välilehti Available plugins  
+        ul
+    	   li Valitse TMC listasta ja valitse Install.
+    	   li TMC Plugin asentuu normaalisti, hyväksy käyttöehdot ja allekirjoittamattoman pluginin asennus
+    
+p Mikäli NetBeans käynnistyy TMC:n päivittämisen jälkeen virheettömästi, kaikki on hyvin ja voit jättää tämän ohjeen lopun huomiotta. 
+p Jos taas saat virheviestin "Warning - could not install some modules", toimi seuraavasti.
+
+==partial "dotnetbeans"
+
+p Nyt NetBeans käynnistyessään ajattelee käynnistyvänsä ensimmäistä kertaa. Asenna plugin uudestaan videon ohjeiden mukaisesti. Aloita 0:50 kohdalta  
+a href="http://youtu.be/yxFeZihtRgM?hd=1&t=50s" http://youtu.be/yxFeZihtRgM?hd=1&t=50s .
+
+
+/p *http://netbeans.org/bugzilla/show_bug.cgi?id=218373
