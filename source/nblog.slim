@@ -1,0 +1,27 @@
+h1 NetBeanssin lokitiedostot
+
+
+p NetBeanssin lokitiedostot löytyvät kansiosta:
+
+h2 Linux-käyttäjät
+pre ~/.netbeans/<versio_numero>/var/log/
+
+h2 Mac-käyttäjät:'
+pre ~/Library/Application Support/NetBeans/<vertio_numero>/var/log/
+
+h2 Windows-käyttäjät:
+
+h3 Windows 7 / Vista:
+pre  C:\Users\%username%\AppData\Roaming\NetBeans<versio_numero>\var\log\
+p Tässä vielä polku, jonka voi suoraan kopioida resurssienhallintaikkunaan. AppDatahan on oletuksena piilotettu ja ei siten näy suoraan.
+pre C:\Users\%username%\AppData\Roaming\NetBeans<br>
+
+h3 Windows XP:
+pre C:\Documents and Settings\%username%\Application Data\NetBeans\<versio_numero>\var\log\
+p Tässä vielä polku, jonka voi suoraan kopioida resurssienhallintaikkunaan. Application Data on oletuksena piilotettu ja ei siten näy suoraan.
+pre C:\Documents and Settings\%username%\Application Data\NetBeans
+
+p 	Kansiossa on tiedostoja, messages.log messages.log1 messages.log2 ...<br>
+	<strong>messages.log</strong> on niistä tuorein ja useinmiten se, jonka haluat jakaa. Kuitenkin mikäli olet virhetilanteen jälkeen sulkenut NBn, niin loki, jossa virhe on on siirtynyt seuraavaan lokitiedostoon, eli messages.log1. <br>
+
+p Aina NBn sulkemisen yhteydessä lokitiedostojen perässä oleva numero kasvaa yhdellä, kunnos lokitiedostot katoavat.
