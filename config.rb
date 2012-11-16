@@ -14,9 +14,10 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
-page "/login.html", :layout => "admin"
-page "index.html", :layout => "index"
-page "netbeans.html", :layout => "index"
+#page "/login.html", :layout => "admin"
+#page "index.html", :layout => "index"
+#page "netbeans.html", :layout => "index"
+page "*", :layout => "default"
 
 # Per-page layout changes:
 #
